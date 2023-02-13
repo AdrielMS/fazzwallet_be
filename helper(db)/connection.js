@@ -3,14 +3,14 @@ const { Client } = require("pg");
 const db = new Client({
   user: "postgres",
   host: "localhost",
-  database: "fazzpay",
-  password: "262626",
+  database: "fazzwallet",
+  password: "admin",
   port: 5432,
 });
 
 db.connect((err) => {
   if (!err) {
-    console.log("Database fazzpay Connected");
+    console.log("Database fazzwallet Connected");
   } else {
     console.log("Database Connection Failed", err);
   }
