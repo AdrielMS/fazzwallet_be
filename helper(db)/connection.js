@@ -2,9 +2,12 @@ const { Client } = require("pg");
 
 const db = new Client({
   user: "postgres",
-  host: "localhost",
-  database: "fazzwallet",
-  password: "admin",
+  // host: "localhost",
+  host: "db.biludqssnstfthulhelw.supabase.co",
+  // database: "fazzwallet",
+  database: "postgres",
+  // password: "admin",
+  password: "@Ms21122012@Ms7895123",
   port: 5432,
 });
 

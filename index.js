@@ -19,5 +19,5 @@ app.get("*", (req, res) => {
 });
 
 app.listen(5000, (req, res) => {
-  console.log("Fazzpay Backend Succes Run on Port 5000");
+  console.log("Fazzwallet Backend Succes Run on Port 5000");
 });
