@@ -1,15 +1,15 @@
 const { Client } = require("pg");
-const { USER, HOST, DATABASE, PASSWORD, PORT } = process.env;
+// const { USER, HOST, DATABASE, PASSWORD, PORT } = process.env;
 
 const db = new Client({
-  user: USER,
+  user: process.env.DB_USER,
   // host: "localhost",
-  host: HOST,
+  host: process.env.DB_HOST,
   // database: "fazzwallet",
-  database: DATABASE,
+  database: process.env.DB_DATABASE,
   // password: "admin",
-  password: PASSWORD,
-  port: PORT,
+  password: process.env.DB_PASSWORD,
+  port: process.env.DB_PORT,
 });
 
 db.connect((err) => {
